@@ -1,0 +1,19 @@
+.container {
+	margin-inline: auto;
+	padding: 0 $padding-inner;
+
+	width: 100%;
+	max-width: $container-width;
+}
+
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
+}

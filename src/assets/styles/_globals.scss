@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+	color: $dark-100;
+	background-color: #fff;
+
+	font-family: $font-family-base;
+
+	@include fluid-text(16, 14);
+
+	font-weight: 300;
+}
+
+h1 {
+	@include fluid-text(48, 36);
+	font-weight: 600;
+}
+
+h2 {
+	@include fluid-text(32, 28);
+	font-weight: 400;
+}
+
+h3 {
+	@include fluid-text(24, 20);
+	font-weight: 400;
+}
+
+h4 {
+	@include fluid-text(20, 18);
+	font-weight: 400;
+}
+
+h5 {
+	@include fluid-text(14, 12);
+	font-weight: 400;
+}
+
+section {
+	padding: $section-padding-y 0;
+}
