@@ -1,1 +1,7 @@
 @import './variables', './mixins', './normalize', './globals', './media', './utils';
+
+@import '../components/Header/header', '../components/Header/mobile-overlay';
+
+@import '../components/Button/burger-button', '../components/Button/button', '../components/Button/cross-button';
+
+@import '../components/Loading/loading';
