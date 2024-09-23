@@ -19,7 +19,7 @@ export default function App() {
 						path='/'
 						element={
 							<Suspense fallback={<Loading />}>
-								<HomePage></HomePage>
+								<HomePage />
 							</Suspense>
 						}
 					/>

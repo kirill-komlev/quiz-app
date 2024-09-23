@@ -1,6 +1,12 @@
 .intro {
 	height: 100vh;
 
+	@include mobile {
+		height: 100%;
+	}
+
+	padding-top: calc(90px + 16px);
+
 	background: url('../../images/background-1.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9,9 +15,13 @@
 	&__inner {
 		display: flex;
 		align-items: center;
-		column-gap: $padding-inner;
+		gap: $padding-inner;
 
 		height: 100%;
+
+		@include mobile() {
+			flex-direction: column;
+		}
 	}
 
 	/* .intro__text */
@@ -22,6 +32,18 @@
 		row-gap: 24px;
 
 		width: 50%;
+
+		@include mobile() {
+			padding-top: 96px;
+
+			width: 100%;
+			align-items: center;
+			text-align: center;
+		}
+
+		@include small-mobile {
+			padding-top: 64px;
+		}
 	}
 
 	/* .intro__title */
@@ -53,8 +75,29 @@
 	}
 
 	&__background {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
 		height: 100%;
 		width: 50%;
+
+		@include mobile {
+			width: 75%;
+		}
+
+		@include small-mobile {
+			width: 100%;
+		}
+
+		& img {
+			width: 100%;
+
+			@include mobile {
+				height: 250px;
+				object-position: top;
+			}
+		}
 	}
 }
 .button {

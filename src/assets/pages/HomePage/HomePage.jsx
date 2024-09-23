@@ -16,18 +16,16 @@ export default function HomePage() {
 							adipiscing elit.
 						</p>
 						<div className='intro__introduction'>
-							<button className='intro__button button'>
-								<NavLink
-									className='intro__link'
-									to='/'
-									onClick={() => {
-										setHeaderModal(false)
-										closeModal()
-									}}
-								>
-									Пройти тест
-								</NavLink>
-							</button>
+							<NavLink
+								className='intro__link'
+								to='/auth/sign-up'
+								onClick={() => {
+									setHeaderModal(false)
+									closeModal()
+								}}
+							>
+								<button className='intro__button button'>Пройти тест</button>
+							</NavLink>
 							<NavLink
 								className='intro__link'
 								to='/about'
@@ -40,13 +38,19 @@ export default function HomePage() {
 							</NavLink>
 						</div>
 					</div>
-					<img
-						className='intro__background'
-						src={intro_peoples}
-						alt=''
-					/>
+					<div className='intro__background'>
+						<img
+							src={intro_peoples}
+							alt=''
+						/>
+					</div>
 				</div>
 			</div>
+			{/* <section id='about'>
+				<div className='about__inner container'>
+
+				</div>
+			</section> */}
 		</>
 	)
 }
