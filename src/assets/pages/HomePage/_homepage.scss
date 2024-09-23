@@ -1,0 +1,61 @@
+.intro {
+	height: 100vh;
+
+	background: url('../../images/background-1.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		column-gap: $padding-inner;
+
+		height: 100%;
+	}
+
+	/* .intro__text */
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+
+		width: 50%;
+	}
+
+	/* .intro__title */
+
+	&__title {
+	}
+
+	/* .intro__subtitle */
+
+	&__subtitle {
+	}
+
+	/* .intro__introduction */
+
+	&__introduction {
+		display: flex;
+		align-items: center;
+		column-gap: 16px;
+	}
+
+	/* .intro__button */
+
+	&__button {
+	}
+
+	/* .intro__link */
+
+	&__link {
+	}
+
+	&__background {
+		height: 100%;
+		width: 50%;
+	}
+}
+.button {
+}

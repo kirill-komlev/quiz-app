@@ -4,6 +4,8 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 import Header from './assets/components/Header/Header'
 import Loading from './assets/components/Loading/Loading'
 
+const HomePage = lazy(() => import('./assets/pages/HomePage/HomePage'))
+
 import './assets/styles/style.scss'
 
 export default function App() {
@@ -17,105 +19,7 @@ export default function App() {
 						path='/'
 						element={
 							<Suspense fallback={<Loading />}>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi
-								reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem
-								itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil,
-								commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni
-								autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet
-								consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam
-								tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, harum rerum magni autem itaque sunt consequatur
-								quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime minima?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nisi delectus, harum rerum magni autem itaque sunt consequatur quia inventore voluptas? Nihil, commodi reiciendis incidunt quam tempore laudantium quaerat maxime
-								minima?
+								<HomePage></HomePage>
 							</Suspense>
 						}
 					/>
@@ -123,12 +27,22 @@ export default function App() {
 					<Route
 						exact
 						path='/about'
-						element={<Suspense fallback={<Loading />}>About</Suspense>}
+						element={<Suspense fallback={<Loading />}>О проекте</Suspense>}
 					/>
 					<Route
 						exact
 						path='/specialists'
-						element={<Suspense fallback={<Loading />}>specialists</Suspense>}
+						element={<Suspense fallback={<Loading />}>Специалисты</Suspense>}
+					/>
+					<Route
+						exact
+						path='/auth/sign-up'
+						element={<Suspense fallback={<Loading />}>Регистрация</Suspense>}
+					/>
+					<Route
+						exact
+						path='/auth/sign-in'
+						element={<Suspense fallback={<Loading />}>Авторизация</Suspense>}
 					/>
 				</Routes>
 			</main>

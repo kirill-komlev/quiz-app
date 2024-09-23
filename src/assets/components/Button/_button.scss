@@ -5,6 +5,8 @@
 	background-color: $primary-100;
 	border-radius: 0.5rem;
 
+	@include fluid-text(16, 14);
+
 	font-weight: 400;
 
 	&:hover {
