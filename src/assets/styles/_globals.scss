@@ -15,20 +15,16 @@ body {
 	}
 
 	&::-webkit-scrollbar {
-		width: 17px;
+		width: 8px;
 	}
 
 	&::-webkit-scrollbar-track {
-		background: rgba($color: $dark-400, $alpha: 0.2);
+		background: $rgba;
 	}
 
 	&::-webkit-scrollbar-thumb {
 		background-color: $primary-100;
 	}
-}
-
-hr {
-	margin: 16px 0;
 }
 
 h1 {

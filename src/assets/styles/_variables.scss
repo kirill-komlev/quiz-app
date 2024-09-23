@@ -18,6 +18,11 @@ $dark-500: #828180;
 // Dark/Mixed - 600: For on background texts color
 $dark-600: #999998;
 
+$rgba: rgba(
+	$color: $dark-100,
+	$alpha: 0.1,
+);
+
 $container-width: 1240px;
 $padding-inner: 20px;
 

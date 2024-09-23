@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import useScrollbarSize from 'react-scrollbar-size'
 
 import Modal from '../Modal/Modal'
 import Button from '../Button/Button'
@@ -9,26 +8,20 @@ import logo from '../../../images/logo.svg'
 
 export default function Header() {
 	const [headerModal, setHeaderModal] = useState(false)
-	const { height, width } = useScrollbarSize()
 
 	function openModal() {
 		let pagePosition = window.scrollY
 		let modal = document.getElementById('modal')
 
 		document.body.classList.add('modal-open')
-		document.body.style.marginRight = width + 'px'
 
 		modal.style.display = 'block'
 		modal.style.top = pagePosition + 'px'
-		modal.style.marginRight = width + 'px'
 	}
 
 	function closeModal() {
 		document.body.classList.remove('modal-open')
-		document.body.style.marginRight = 0
-
 		modal.style.display = 'none'
-		modal.style.top = 0
 	}
 
 	return (
@@ -97,18 +90,35 @@ export default function Header() {
 					className='mobile-overlay visible-mobile'
 					open={headerModal}
 				>
-					<div className='mobile-overlay__close-button-wrapper'>
-						<Button
-							className='mobile-overlay__close-button cross-button'
+					<div className='mobile-overlay__header'>
+						<NavLink
+							className='header__logo'
+							to='/'
 							onClick={() => {
 								setHeaderModal(false)
 								closeModal()
 							}}
-						/>
+						>
+							<img
+								src={logo}
+								alt=''
+								className='logo logo__image'
+							/>
+							<p className='header__title'>Quiz app</p>
+						</NavLink>
+						<div className='mobile-overlay__close-button-wrapper'>
+							<Button
+								className='mobile-overlay__close-button cross-button'
+								onClick={() => {
+									setHeaderModal(false)
+									closeModal()
+								}}
+							/>
+						</div>
 					</div>
 					<div className='mobile-overlay__body'>
 						<ul className='mobile-overlay__body-list'>
-							<li className='mobile-overlay__body-item'>
+							{/* <li className='mobile-overlay__body-item'>
 								<NavLink
 									className='mobile-overlay__body-link'
 									to='/'
@@ -119,7 +129,7 @@ export default function Header() {
 								>
 									Главная
 								</NavLink>
-							</li>
+							</li> */}
 							<li className='mobile-overlay__body-item'>
 								<NavLink
 									className='mobile-overlay__body-link'
@@ -144,32 +154,29 @@ export default function Header() {
 									Специалисты
 								</NavLink>
 							</li>
-							<hr />
-							<li className='mobile-overlay__body-item'>
-								<NavLink
-									className='mobile-overlay__body-link'
-									to='/auth/sign-in'
-									onClick={() => {
-										setHeaderModal(false)
-										closeModal()
-									}}
-								>
-									Войти
-								</NavLink>
-							</li>
-							<li className='mobile-overlay__body-item'>
-								<NavLink
-									className='mobile-overlay__body-link'
-									to='/auth/sign-up'
-									onClick={() => {
-										setHeaderModal(false)
-										closeModal()
-									}}
-								>
-									<button className='header__button button button--mobile'>Пройти тест</button>
-								</NavLink>
-							</li>
 						</ul>
+						<div className='mobile-overlay__body-auth'>
+							<NavLink
+								className='mobile-overlay__auth-link'
+								to='/auth/sign-in'
+								onClick={() => {
+									setHeaderModal(false)
+									closeModal()
+								}}
+							>
+								Войти
+							</NavLink>
+							<NavLink
+								className='mobile-overlay__auth-link'
+								to='/auth/sign-up'
+								onClick={() => {
+									setHeaderModal(false)
+									closeModal()
+								}}
+							>
+								<button className='header__button button button--mobile'>Пройти тест</button>
+							</NavLink>
+						</div>
 					</div>
 				</Modal>
 			</header>
