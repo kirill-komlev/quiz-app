@@ -19,14 +19,10 @@ export default function HomePage() {
 							<NavLink
 								className='intro__link'
 								to='/auth/sign-up'
-								onClick={() => {
-									setHeaderModal(false)
-									closeModal()
-								}}
 							>
 								<button className='intro__button button'>Пройти тест</button>
 							</NavLink>
-							<NavLink
+							{/* <NavLink
 								className='intro__link'
 								to='/about'
 								onClick={() => {
@@ -35,7 +31,7 @@ export default function HomePage() {
 								}}
 							>
 								Подробнее
-							</NavLink>
+							</NavLink> */}
 						</div>
 					</div>
 					<div className='intro__background'>

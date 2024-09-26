@@ -44,7 +44,7 @@ export default function Header() {
 						<p className='header__title'>Quiz app</p>
 					</NavLink>
 					<nav className='header__menu hidden-mobile'>
-						<ul className='header__menu-list'>
+						{/* <ul className='header__menu-list'>
 							<li className='header__menu-item'>
 								<NavLink
 									className='header__menu-link'
@@ -61,14 +61,14 @@ export default function Header() {
 									Специалисты
 								</NavLink>
 							</li>
-						</ul>
+						</ul> */}
 						<div className='header__auth'>
-							<NavLink
+							{/* <NavLink
 								className='header__auth-sign-in'
 								to='/auth/sign-in'
 							>
 								Войти
-							</NavLink>
+							</NavLink> */}
 							<NavLink
 								className='header__auth-sign-up'
 								to='/auth/sign-up'
@@ -130,7 +130,7 @@ export default function Header() {
 									Главная
 								</NavLink>
 							</li> */}
-							<li className='mobile-overlay__body-item'>
+							{/* <li className='mobile-overlay__body-item'>
 								<NavLink
 									className='mobile-overlay__body-link'
 									to='/about'
@@ -153,10 +153,10 @@ export default function Header() {
 								>
 									Специалисты
 								</NavLink>
-							</li>
+							</li> */}
 						</ul>
 						<div className='mobile-overlay__body-auth'>
-							<NavLink
+							{/* <NavLink
 								className='mobile-overlay__auth-link'
 								to='/auth/sign-in'
 								onClick={() => {
@@ -165,7 +165,7 @@ export default function Header() {
 								}}
 							>
 								Войти
-							</NavLink>
+							</NavLink> */}
 							<NavLink
 								className='mobile-overlay__auth-link'
 								to='/auth/sign-up'

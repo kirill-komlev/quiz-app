@@ -152,7 +152,7 @@ button {
 }
 .header__menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   flex-grow: 1;
   /* .header__menu-list */
@@ -222,7 +222,7 @@ button {
 .mobile-overlay__body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   flex: 1;
 }
@@ -427,7 +427,7 @@ button {
 }
 @media (max-width: 768px) {
   .intro__background {
-    width: 75%;
+    width: 85%;
   }
 }
 @media (max-width: 425px) {
@@ -440,7 +440,7 @@ button {
 }
 @media (max-width: 768px) {
   .intro__background img {
-    height: 250px;
+    height: 350px;
     -o-object-position: top;
        object-position: top;
   }
