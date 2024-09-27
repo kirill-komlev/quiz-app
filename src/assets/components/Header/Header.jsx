@@ -174,7 +174,7 @@ export default function Header() {
 									closeModal()
 								}}
 							>
-								<button className='header__button button button--mobile'>Пройти тест</button>
+								<Button className='header__button button button--mobile'>Пройти тест</Button>
 							</NavLink>
 						</div>
 					</div>

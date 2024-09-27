@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 
 import intro_peoples from '../../../images/intro-peoples.svg'
 
+import Button from '../../components/Button/Button'
+
 export default function HomePage() {
 	return (
 		<>
@@ -20,7 +22,7 @@ export default function HomePage() {
 								className='intro__link'
 								to='/auth/sign-up'
 							>
-								<button className='intro__button button'>Пройти тест</button>
+								<Button className='intro__button button'>Пройти тест</Button>
 							</NavLink>
 							{/* <NavLink
 								className='intro__link'
@@ -42,6 +44,49 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
+			<section className='about'>
+				<div className='about__inner container'>
+					<div className='about__information'>
+						<h2 className='about__title'>
+							Наша методика <br className='hidden-mobile' />
+							состоит из
+						</h2>
+						<p className='about__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+					</div>
+					<div className='about__stages'>
+						<div className='about__block'>
+							<p className='about__block-id'>01</p>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+						<div className='about__block'>
+							<div className='about__block-id'>02</div>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+						<div className='about__block'>
+							<div className='about__block-id'>03</div>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+						<div className='about__block'>
+							<div className='about__block-id'>04</div>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+						<div className='about__block'>
+							<div className='about__block-id'>05</div>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+						<div className='about__block'>
+							<div className='about__block-id'>06</div>
+							<h3 className='about__block-title'>Lorem ipsum</h3>
+							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 			{/* <section id='about'>
 				<div className='about__inner container'>
 

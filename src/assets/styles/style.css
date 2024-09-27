@@ -444,4 +444,52 @@ button {
     -o-object-position: top;
        object-position: top;
   }
+}
+
+.about {
+  /* .about__inner */
+  /* .about__information */
+  /* .about__title */
+  /* .about__text */
+  /* .about__button */
+  /* .about__stages */
+  /* .about__block */
+  /* .about__block-id */
+}
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about__information {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about__stages {
+  flex: 2;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px 20px;
+}
+.about__block {
+  position: relative;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  flex: 1;
+  /* .about__block-title */
+  /* .about__block-text */
+}
+.about__block-id {
+  position: absolute;
+  top: -48px;
+  left: 0;
+  font-size: 128px;
+  font-weight: 700;
+  color: rgba(255, 122, 0, 0.25);
 }/*# sourceMappingURL=style.css.map */
