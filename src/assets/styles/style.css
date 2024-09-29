@@ -68,7 +68,7 @@ mark {
 }
 
 h1 {
-  font-size: clamp(36px, 3.3333333333vw, 48px);
+  font-size: clamp(42px, 3.3333333333vw, 48px);
   font-weight: 700;
 }
 
@@ -461,11 +461,19 @@ button {
   justify-content: space-between;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .about__inner {
+    flex-direction: column;
+  }
+}
 .about__information {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.about__title {
+  text-wrap: balance;
 }
 .about__stages {
   flex: 2;
@@ -474,6 +482,11 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px 20px;
+}
+@media (max-width: 425px) {
+  .about__stages {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .about__block {
   position: relative;
@@ -484,6 +497,11 @@ button {
   flex: 1;
   /* .about__block-title */
   /* .about__block-text */
+}
+@media (max-width: 425px) {
+  .about__block {
+    padding: 24px;
+  }
 }
 .about__block-id {
   position: absolute;

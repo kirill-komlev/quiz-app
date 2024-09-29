@@ -47,10 +47,7 @@ export default function HomePage() {
 			<section className='about'>
 				<div className='about__inner container'>
 					<div className='about__information'>
-						<h2 className='about__title'>
-							Наша методика <br className='hidden-mobile' />
-							состоит из
-						</h2>
+						<h2 className='about__title'>Наша методика состоит из</h2>
 						<p className='about__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
 					</div>
 					<div className='about__stages'>
