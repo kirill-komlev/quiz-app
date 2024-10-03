@@ -197,3 +197,44 @@
 
 	/* .about__block-id */
 }
+
+.advantages {
+	/* .advantages__inner */
+
+	&__inner {
+	}
+
+	/* .advantages__title */
+
+	&__title {
+	}
+
+	/* .advantages__blocks */
+
+	&__blocks {
+	}
+
+	/* .advantages__card */
+
+	&__card {
+		/* .advantages__card-icon */
+
+		&-icon {
+			padding: 16px;
+			background: $rgba-primary;
+			border-radius: 100%;
+		}
+
+		/* .advantages__card-title */
+
+		&-title {
+		}
+
+		/* .advantages__card-text */
+
+		&-text {
+		}
+	}
+}
+.container {
+}

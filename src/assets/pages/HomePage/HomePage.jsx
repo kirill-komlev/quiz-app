@@ -1,8 +1,12 @@
 import { NavLink } from 'react-router-dom'
 
 import intro_peoples from '../../../images/intro-peoples.svg'
+import icon_flag from '../../../images/advantages/icon-flag.svg'
 
 import Button from '../../components/Button/Button'
+import AboutBlock from '../../components/AboutBlock/AboutBlock'
+
+import { about } from '../../data/data'
 
 export default function HomePage() {
 	return (
@@ -51,44 +55,43 @@ export default function HomePage() {
 						<p className='about__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
 					</div>
 					<div className='about__stages'>
-						<div className='about__block'>
-							<p className='about__block-id'>01</p>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
-						<div className='about__block'>
-							<div className='about__block-id'>02</div>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
-						<div className='about__block'>
-							<div className='about__block-id'>03</div>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
-						<div className='about__block'>
-							<div className='about__block-id'>04</div>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
-						<div className='about__block'>
-							<div className='about__block-id'>05</div>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
-						<div className='about__block'>
-							<div className='about__block-id'>06</div>
-							<h3 className='about__block-title'>Lorem ipsum</h3>
-							<p className='about__block-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu.</p>
-						</div>
+						<AboutData />
 					</div>
 				</div>
 			</section>
-			{/* <section id='about'>
-				<div className='about__inner container'>
-
+			{/* <section className='advantages'>
+				<div className='advantages__inner container'>
+					<h2 className='advantages__title'>Преимущества методики</h2>
+					<div className='advantages__blocks'>
+						<div className='advantages__card'>
+							<img
+								src={icon_flag}
+								alt=''
+								className='advantages__card-icon'
+							/>
+							<h3 className='advantages__card-title'>Lorem ipsum</h3>
+							<p className='advantages__card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu. </p>
+						</div>
+					</div>
 				</div>
 			</section> */}
 		</>
 	)
+
+	function AboutData() {
+		let listItems = []
+		for (let i = 0; i < about.length; i++) {
+			listItems.push(
+				<AboutBlock
+					key={i}
+					id={i + 1}
+					title={about[i].title}
+					text={about[i].text}
+				></AboutBlock>
+			)
+		}
+		console.log(listItems)
+		console.log('123')
+		return listItems
+	}
 }
