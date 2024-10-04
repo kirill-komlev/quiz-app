@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom'
 
 import intro_peoples from '../../../images/intro-peoples.svg'
-import icon_flag from '../../../images/advantages/icon-flag.svg'
+// import { icon_flag } from '../../../images/advantages'
 
 import Button from '../../components/Button/Button'
 import AboutBlock from '../../components/AboutBlock/AboutBlock'
+import AdvantagesCard from '../../components/AdvantagesCard/AdvantagesCard'
 
-import { about } from '../../data/data'
+import { images, about, advantages } from '../../data/data'
 
 export default function HomePage() {
 	return (
@@ -59,22 +60,14 @@ export default function HomePage() {
 					</div>
 				</div>
 			</section>
-			{/* <section className='advantages'>
+			<section className='advantages'>
 				<div className='advantages__inner container'>
 					<h2 className='advantages__title'>Преимущества методики</h2>
 					<div className='advantages__blocks'>
-						<div className='advantages__card'>
-							<img
-								src={icon_flag}
-								alt=''
-								className='advantages__card-icon'
-							/>
-							<h3 className='advantages__card-title'>Lorem ipsum</h3>
-							<p className='advantages__card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu. </p>
-						</div>
+						<AdvantagesData></AdvantagesData>
 					</div>
 				</div>
-			</section> */}
+			</section>
 		</>
 	)
 
@@ -90,8 +83,21 @@ export default function HomePage() {
 				></AboutBlock>
 			)
 		}
-		console.log(listItems)
-		console.log('123')
+		return listItems
+	}
+
+	function AdvantagesData() {
+		let listItems = []
+		for (let i = 0; i < advantages.length; i++) {
+			listItems.push(
+				<AdvantagesCard
+					key={i}
+					img_src={advantages[i].img}
+					title={advantages[i].title}
+					text={advantages[i].text}
+				></AdvantagesCard>
+			)
+		}
 		return listItems
 	}
 }

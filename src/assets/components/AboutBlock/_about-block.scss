@@ -1,0 +1,42 @@
+.about {
+	/* .about__block */
+
+	&__block {
+		position: relative;
+
+		padding: 32px;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 8px;
+
+		flex: 1;
+
+		@include small-mobile {
+			padding: 24px;
+		}
+
+		/* .about__block-id */
+		&-id {
+			position: absolute;
+			top: -48px;
+			left: 0;
+			z-index: -1;
+
+			font-size: 128px;
+			font-weight: 700;
+
+			color: $rgba-primary;
+		}
+
+		/* .about__block-title */
+
+		&-title {
+		}
+
+		/* .about__block-text */
+
+		&-text {
+		}
+	}
+}
