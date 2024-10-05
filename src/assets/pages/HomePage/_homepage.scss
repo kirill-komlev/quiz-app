@@ -5,6 +5,7 @@
 		height: 100%;
 	}
 
+
 	padding-top: calc(90px + 16px);
 
 	background: url('../../images/background-1.svg');
@@ -140,9 +141,9 @@
 	&__button {
 	}
 
-	/* .about__stages */
+	/* .about__list */
 
-	&__stages {
+	&__list {
 		flex: 2;
 
 		display: grid;
@@ -170,9 +171,9 @@
 		margin-bottom: 64px;
 	}
 
-	/* .advantages__blocks */
+	/* .advantages__list */
 
-	&__blocks {
+	&__list {
 		display: flex;
 		gap: 20px;
 

@@ -399,19 +399,19 @@ supported by Chrome, Edge, Opera and Firefox */
   font-weight: 700;
   color: rgba(255, 122, 0, 0.25);
 }
-/* .advantages__card */
-.advantages__card {
-  /* .advantages__card-icon */
+/* .advantages__block */
+.advantages__block {
+  /* .advantages__block-icon */
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   background: white;
   border-radius: 16px;
-  /* .advantages__card-title */
-  /* .advantages__card-text */
+  /* .advantages__block-title */
+  /* .advantages__block-text */
 }
-.advantages__card-icon {
+.advantages__block-icon {
   width: 32px;
   height: 32px;
   padding: 16px;
@@ -508,7 +508,7 @@ supported by Chrome, Edge, Opera and Firefox */
   /* .about__title */
   /* .about__text */
   /* .about__button */
-  /* .about__stages */
+  /* .about__list */
 }
 .about__inner {
   display: flex;
@@ -529,7 +529,7 @@ supported by Chrome, Edge, Opera and Firefox */
 .about__title {
   text-wrap: balance;
 }
-.about__stages {
+.about__list {
   flex: 2;
   display: grid;
   grid-auto-columns: 1fr;
@@ -538,7 +538,7 @@ supported by Chrome, Edge, Opera and Firefox */
   gap: 20px 20px;
 }
 @media (max-width: 425px) {
-  .about__stages {
+  .about__list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -547,17 +547,17 @@ supported by Chrome, Edge, Opera and Firefox */
   /* .advantages__inner */
   background: rgba(43, 42, 41, 0.1);
   /* .advantages__title */
-  /* .advantages__blocks */
+  /* .advantages__list */
 }
 .advantages__title {
   margin-bottom: 64px;
 }
-.advantages__blocks {
+.advantages__list {
   display: flex;
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .advantages__blocks {
+  .advantages__list {
     flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

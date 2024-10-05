@@ -6,7 +6,7 @@ import Loading from './assets/components/Loading/Loading'
 
 const HomePage = lazy(() => import('./assets/pages/HomePage/HomePage'))
 
-import './assets/styles/style.scss'
+import './assets/styles/style.css'
 
 export default function App() {
 	return (

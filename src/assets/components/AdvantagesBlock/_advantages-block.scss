@@ -1,7 +1,7 @@
-/* .advantages__card */
+/* .advantages__block */
 
-.advantages__card {
-	/* .advantages__card-icon */
+.advantages__block {
+	/* .advantages__block-icon */
 	padding: 32px;
 
 	display: flex;
@@ -22,12 +22,12 @@
 		box-sizing: content-box;
 	}
 
-	/* .advantages__card-title */
+	/* .advantages__block-title */
 
 	&-title {
 	}
 
-	/* .advantages__card-text */
+	/* .advantages__block-text */
 
 	&-text {
 	}
