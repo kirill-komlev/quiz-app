@@ -560,4 +560,30 @@ supported by Chrome, Edge, Opera and Firefox */
   .advantages__list {
     flex-direction: column;
   }
+}
+
+.specialists__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.specialists__information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.specialists__list {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .specialists__list {
+    flex-direction: column;
+  }
+}
+.specialists__block--avatar {
+  height: 300px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

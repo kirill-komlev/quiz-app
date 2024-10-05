@@ -67,7 +67,24 @@ export default function HomePage() {
 					</div>
 				</div>
 			</section>
-			
+			<section className="specialists">
+				<div className="specialists__inner container">
+					<div className="specialists__information">
+						<h2 className="specialists__title">Наши специалисты</h2>
+						<p className="specialists__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu. </p>
+					</div>
+					<div className="specialists__list">
+						<div className="specialists__block">
+							<img src="" alt="" className="specialists__block--avatar"/>
+							<h3 className="specialists__block--name">
+								Имя Фамилия
+							</h3>
+							<p className='specialists__block--experience'><h4>Общий стаж:</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<p className="specialists__block--education"><h4>Образование:</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</>
 	)
 

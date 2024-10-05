@@ -182,3 +182,40 @@
 		}
 	}
 }
+
+.specialists {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		gap: 64px;
+	}
+
+	&__information {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		gap: 16px;
+	}
+
+
+	&__list {
+		display: flex;
+		gap: 20px;
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+
+	&__block {
+		&--avatar {
+			height: 300px;
+			width: 100%;
+		}
+
+		
+	}
+}
