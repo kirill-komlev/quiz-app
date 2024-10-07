@@ -5,8 +5,9 @@ import intro_peoples from '../../../images/intro-peoples.svg'
 import Button from '../../components/Button/Button'
 import AboutBlock from '../../components/AboutBlock/AboutBlock'
 import AdvantagesBlock from '../../components/AdvantagesBlock/AdvantagesBlock'
+import SpecialistsBlock from '../../components/SpecialistsBlock/SpecialistsBlock'
 
-import { about, advantages } from '../../data/data'
+import { specialists, about, advantages } from '../../data/data'
 
 export default function HomePage() {
 	return (
@@ -63,25 +64,18 @@ export default function HomePage() {
 				<div className='advantages__inner container'>
 					<h2 className='advantages__title'>Преимущества методики</h2>
 					<div className='advantages__list'>
-						<AdvantagesData></AdvantagesData>
+						<AdvantagesData />
 					</div>
 				</div>
 			</section>
-			<section className="specialists">
-				<div className="specialists__inner container">
-					<div className="specialists__information">
-						<h2 className="specialists__title">Наши специалисты</h2>
-						<p className="specialists__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu. </p>
+			<section className='specialists'>
+				<div className='specialists__inner container'>
+					<div className='specialists__information'>
+						<h2 className='specialists__title'>Наши специалисты</h2>
+						<p className='specialists__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra nisl dui, non sollicitudin risus dignissim eu. </p>
 					</div>
-					<div className="specialists__list">
-						<div className="specialists__block">
-							<img src="" alt="" className="specialists__block--avatar"/>
-							<h3 className="specialists__block--name">
-								Имя Фамилия
-							</h3>
-							<p className='specialists__block--experience'><h4>Общий стаж:</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<p className="specialists__block--education"><h4>Образование:</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-						</div>
+					<div className='specialists__list'>
+						<SpecialistsData />
 					</div>
 				</div>
 			</section>
@@ -112,6 +106,22 @@ export default function HomePage() {
 					img_src={advantages[i].img}
 					title={advantages[i].title}
 					text={advantages[i].text}
+				/>
+			)
+		}
+		return listItems
+	}
+
+	function SpecialistsData() {
+		let listItems = []
+		for (let i = 0; i < specialists.length; i++) {
+			listItems.push(
+				<SpecialistsBlock
+					key={i}
+					img_src={specialists[i].img}
+					name={specialists[i].name}
+					experience={specialists[i].experience}
+					education={specialists[i].education}
 				/>
 			)
 		}

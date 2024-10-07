@@ -1,0 +1,16 @@
+.specialists__block {
+	flex: 1;
+
+	&--avatar {
+		height: 300px;
+		width: 100%;
+	}
+
+	&--experience,
+	&--education {
+		span {
+			@include fluid-text(20, 18);
+			font-weight: 500;
+		}
+	}
+}

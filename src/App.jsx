@@ -3,15 +3,16 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import Header from './assets/components/Header/Header'
 import Loading from './assets/components/Loading/Loading'
+import Footer from './assets/components/Footer/Footer'
 
 const HomePage = lazy(() => import('./assets/pages/HomePage/HomePage'))
 
-import './assets/styles/style.css'
+import './assets/styles/style.scss'
 
 export default function App() {
 	return (
 		<>
-			<Header></Header>
+			<Header />
 			<main>
 				<Routes>
 					<Route
