@@ -71,7 +71,7 @@ export default function Header() {
 							</NavLink> */}
 							<NavLink
 								className='header__auth-sign-up'
-								to='/auth/sign-up'
+								to='/sign-in'
 							>
 								<button className='header__button button'>Пройти тест</button>
 							</NavLink>
@@ -168,7 +168,7 @@ export default function Header() {
 							</NavLink> */}
 							<NavLink
 								className='mobile-overlay__auth-link'
-								to='/auth/sign-up'
+								to='/sign-in'
 								onClick={() => {
 									setHeaderModal(false)
 									closeModal()

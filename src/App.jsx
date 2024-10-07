@@ -6,6 +6,7 @@ import Loading from './assets/components/Loading/Loading'
 import Footer from './assets/components/Footer/Footer'
 
 const HomePage = lazy(() => import('./assets/pages/HomePage/HomePage'))
+const AuthorizationPage = lazy(() => import('./assets/pages/AuthorizationPage/AuthorizationPage'))
 
 import './assets/styles/style.scss'
 
@@ -27,23 +28,12 @@ export default function App() {
 
 					<Route
 						exact
-						path='/about'
-						element={<Suspense fallback={<Loading />}>О проекте</Suspense>}
-					/>
-					<Route
-						exact
-						path='/specialists'
-						element={<Suspense fallback={<Loading />}>Специалисты</Suspense>}
-					/>
-					<Route
-						exact
-						path='/auth/sign-up'
-						element={<Suspense fallback={<Loading />}>Регистрация</Suspense>}
-					/>
-					<Route
-						exact
-						path='/auth/sign-in'
-						element={<Suspense fallback={<Loading />}>Авторизация</Suspense>}
+						path='/sign-in'
+						element={
+							<Suspense fallback={<Loading />}>
+								<AuthorizationPage />
+							</Suspense>
+						}
 					/>
 				</Routes>
 			</main>

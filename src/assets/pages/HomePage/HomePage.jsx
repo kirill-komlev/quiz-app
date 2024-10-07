@@ -25,7 +25,7 @@ export default function HomePage() {
 						<div className='intro__introduction'>
 							<NavLink
 								className='intro__link'
-								to='/auth/sign-up'
+								to='/sign-in'
 							>
 								<Button className='intro__button button'>Пройти тест</Button>
 							</NavLink>
