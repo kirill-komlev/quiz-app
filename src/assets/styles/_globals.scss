@@ -70,3 +70,22 @@ section {
 button {
 	font-family: $font-family-base;
 }
+
+label {
+	@include fluid-text(20, 18);
+	font-weight: 500;
+}
+
+input[type='text'],
+input[type='password'] {
+	padding: 16px;
+
+	width: 100%;
+
+	border: 1px solid $rgba;
+	border-radius: 8px;
+}
+
+input[type='text']:focus {
+	border: 1px solid $rgba-primary;
+}
