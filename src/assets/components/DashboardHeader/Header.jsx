@@ -41,7 +41,7 @@ export default function Header() {
 							alt=''
 							className='logo logo__image'
 						/>
-						<p className='header__title'>Quiz app</p>
+						<p className='header__title'>Test</p>
 					</NavLink>
 					<nav className='header__menu hidden-mobile'>
 						{/* <ul className='header__menu-list'>
