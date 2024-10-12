@@ -7,6 +7,7 @@ import Footer from './assets/components/Footer/Footer'
 
 const HomePage = lazy(() => import('./assets/pages/HomePage/HomePage'))
 const AuthorizationPage = lazy(() => import('./assets/pages/AuthorizationPage/AuthorizationPage'))
+const DashboardPage = lazy(() => import('./assets/pages/DashboardPage/DashboardPage'))
 
 import './assets/styles/style.scss'
 
@@ -32,6 +33,16 @@ export default function App() {
 						element={
 							<Suspense fallback={<Loading />}>
 								<AuthorizationPage />
+							</Suspense>
+						}
+					/>
+
+					<Route
+						exact
+						path='/dashboard'
+						element={
+							<Suspense fallback={<Loading />}>
+								<DashboardPage />
 							</Suspense>
 						}
 					/>

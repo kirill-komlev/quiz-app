@@ -37,7 +37,7 @@ export default function AuthorizationPage() {
 							/>
 						</div>
 						<button className='form__button button'>
-							<NavLink>Авторизоваться</NavLink>
+							<NavLink to='/dashboard'>Авторизоваться</NavLink>
 						</button>
 					</form>
 				</div>
