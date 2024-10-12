@@ -36,9 +36,12 @@ export default function AuthorizationPage() {
 								placeholder='*********'
 							/>
 						</div>
-						<button className='form__button button'>
-							<NavLink to='/dashboard'>Авторизоваться</NavLink>
-						</button>
+						<NavLink
+							className='form__link'
+							to='/dashboard'
+						>
+							<button className='form__button button'>Авторизоваться</button>
+						</NavLink>
 					</form>
 				</div>
 			</div>
