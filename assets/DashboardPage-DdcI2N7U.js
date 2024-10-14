@@ -1,0 +1,1 @@
+import{j as a,L as s}from"./index-Dle6zYsw.js";function e(){return a.jsx(a.Fragment,{children:a.jsx("div",{className:"dashboard",children:a.jsx("div",{className:"dashboard__inner fullsize-container",children:a.jsx(s,{to:"/123",children:"12345"})})})})}export{e as default};
