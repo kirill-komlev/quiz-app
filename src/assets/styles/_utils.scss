@@ -6,6 +6,13 @@
 	max-width: $container-width;
 }
 
+.fullsize-container {
+	margin-inline: auto;
+	padding: 0 $padding-inner;
+
+	width: 100%;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */

@@ -18,6 +18,10 @@
 		justify-content: space-between;
 		align-items: center;
 		column-gap: 64px;
+
+		@include mobile {
+			column-gap: 0px;
+		}
 	}
 
 	/* .header__logo */

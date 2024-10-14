@@ -8,7 +8,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer className='footer'>
-				<div className='footer__inner container'>
+				<div className='footer__inner fullsize-container'>
 					<div className='footer__information'>
 						<Link
 							className='footer__logo'
