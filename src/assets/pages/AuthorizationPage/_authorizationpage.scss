@@ -36,20 +36,3 @@
 		box-shadow: $box-shadow;
 	}
 }
-
-.form {
-	&__blocks {
-		display: flex;
-		flex-direction: column;
-
-		gap: 16px;
-	}
-
-	&__login {
-		margin-bottom: 16px;
-	}
-
-	&__button {
-		width: 100%;
-	}
-}

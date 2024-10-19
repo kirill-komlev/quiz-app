@@ -27,7 +27,7 @@ export default function App() {
 					/>
 					<Route
 						exact
-						path='/dashboard'
+						path='dashboard/*'
 						element={<DashboardHeader />}
 					/>
 				</Routes>
@@ -44,22 +44,9 @@ export default function App() {
 							path='/sign-in'
 							element={<AuthorizationPage />}
 						/>
-						{/* <Route
-							exact
-							path='/dashboard'
-						>
-							<Route
-								index
-								element={<DashboardPage />}
-							/>
-							<Route
-								path='test-1'
-								element={<div>test 1</div>}
-							/>
-						</Route> */}
 						<Route
 							exact
-							path='/dashboard'
+							path='dashboard/*'
 							element={<DashboardPage />}
 						/>
 					</Routes>
@@ -72,7 +59,7 @@ export default function App() {
 					/>
 					<Route
 						exact
-						path='/dashboard'
+						path='dashboard/*'
 						element={<DashboardFooter />}
 					/>
 				</Routes>

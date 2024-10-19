@@ -44,10 +44,36 @@ export default function Header() {
 						<p className='header__title'>{config.name}</p>
 					</Link>
 					<nav className='header__menu hidden-mobile'>
+						<ul className='header__menu-list'>
+							<li className='header__menu-item'>
+								<Link
+									className='header__menu-link'
+									to='test-1'
+								>
+									test-1
+								</Link>
+							</li>
+							<li className='header__menu-item'>
+								<Link
+									className='header__menu-link'
+									to='test-2'
+								>
+									test-2
+								</Link>
+							</li>
+							<li className='header__menu-item'>
+								<Link
+									className='header__menu-link'
+									to='test-3'
+								>
+									test-3
+								</Link>
+							</li>
+						</ul>
 						<div className='header__auth'>
 							<Link
 								className='header__auth-sign-up'
-								to='sign-in'
+								to='/sign-in'
 							>
 								<button className='header__button button'>Пройти тест</button>
 							</Link>
