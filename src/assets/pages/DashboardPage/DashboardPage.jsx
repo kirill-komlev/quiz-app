@@ -13,18 +13,29 @@ const ScrollToTop = () => {
 	return null
 }
 
+// https://habr.com/ru/companies/otus/articles/574428/
+
 export default function DashboardPage() {
 	return (
 		<>
-			<section className='dashboard'>
+			<div className='dashboard'>
 				<div className='dashboard__inner fullsize-container'>
 					<ScrollToTop />
 					<Suspense fallback={<Loading />}>
 						<Routes>
 							<Route
 								index
+								element={<DashboardInfo></DashboardInfo>}
+							/>
+							<Route
+								path='auth'
 								element={<DashboardAuth></DashboardAuth>}
-							></Route>
+							/>
+							<Route
+								path='instructions-for-the-test'
+								element={<div>Инструкция к тесту</div>}
+							/>
+
 							<Route
 								path='test-1'
 								element={<div>test 1</div>}
@@ -40,7 +51,20 @@ export default function DashboardPage() {
 						</Routes>
 					</Suspense>
 				</div>
-			</section>
+			</div>
+		</>
+	)
+}
+
+function DashboardInfo() {
+	return (
+		<>
+			<div className='dashboard__info-blocks'>
+				<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
+				<Link to='auth'>
+					<button className='dashboard__button button'>Пройти тест</button>
+				</Link>
+			</div>
 		</>
 	)
 }
@@ -109,43 +133,10 @@ function DashboardAuth() {
 						id='school'
 						className='form__name'
 					/>
-					<label
-						htmlFor='school'
-						className='form__school-title'
-					>
-						Школа
-					</label>
-					<input
-						type='text'
-						id='school'
-						className='form__name'
-					/>
-					<label
-						htmlFor='school'
-						className='form__school-title'
-					>
-						Школа
-					</label>
-					<input
-						type='text'
-						id='school'
-						className='form__name'
-					/>
-					<label
-						htmlFor='school'
-						className='form__school-title'
-					>
-						Школа
-					</label>
-					<input
-						type='text'
-						id='school'
-						className='form__name'
-					/>
 				</div>
 
 				<Link
-					to='test-1'
+					to='../test-1'
 					className='form__link'
 				>
 					<button className='button form__button'>Далее</button>

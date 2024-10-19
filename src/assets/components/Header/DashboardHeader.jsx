@@ -48,25 +48,9 @@ export default function Header() {
 							<li className='header__menu-item'>
 								<Link
 									className='header__menu-link'
-									to='test-1'
+									to='/dashboard'
 								>
-									test-1
-								</Link>
-							</li>
-							<li className='header__menu-item'>
-								<Link
-									className='header__menu-link'
-									to='test-2'
-								>
-									test-2
-								</Link>
-							</li>
-							<li className='header__menu-item'>
-								<Link
-									className='header__menu-link'
-									to='test-3'
-								>
-									test-3
+									Назад на главную
 								</Link>
 							</li>
 						</ul>
