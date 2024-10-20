@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import Loading from '../../components/Loading/Loading'
@@ -12,6 +12,8 @@ const ScrollToTop = () => {
 
 	return null
 }
+
+import { test1key, speciality } from '../../data/test_data'
 
 // https://habr.com/ru/companies/otus/articles/574428/
 
@@ -38,7 +40,7 @@ export default function DashboardPage() {
 
 							<Route
 								path='test-1'
-								element={<div>test 1</div>}
+								element={<Test1></Test1>}
 							/>
 							<Route
 								path='test-2'
@@ -52,6 +54,50 @@ export default function DashboardPage() {
 					</Suspense>
 				</div>
 			</div>
+		</>
+	)
+}
+
+function Test1() {
+	const [count, setCount] = useState(40)
+	const [showEnd, setShowEnd] = useState(false)
+
+	const [result, setResult] = useState([])
+
+	const handleClick = code => {
+		if (count + 1 < test1key.length) {
+			result.push(code)
+			setCount(count => count + 1)
+			console.log(result)
+		} else {
+			result.push(code)
+			setShowEnd(true)
+			console.log(result)
+		}
+	}
+
+	return (
+		<>
+			{showEnd ? (
+				<p>
+					Тест окончен <br />
+				</p>
+			) : (
+				<>
+					<h3>
+						Вопрос {count + 1} из {test1key.length}
+					</h3>
+					{test1key[count].map(num => (
+						<button
+							key={num}
+							className='button'
+							onClick={() => handleClick(speciality[num].name)}
+						>
+							{speciality[num].name}
+						</button>
+					))}
+				</>
+			)}
 		</>
 	)
 }

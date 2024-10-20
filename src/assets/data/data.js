@@ -61,22 +61,3 @@ export const specialists = [
 		education: 'МГППУ, МГУ им. Ломоносова. Кандидат психологических наук, диссертация на тему развития самостоятельности в планировании личных профессиональных перспектив.',
 	},
 ]
-
-export const test1 = [
-	{
-		img: avatar.KirillKuznetsov,
-		name: 'Учитель',
-	},
-	{
-		img: avatar.KirillKuznetsov,
-		name: 'Психолог',
-	},
-	{
-		img: avatar.IvanIvanov,
-		name: 'Водитель',
-	},
-	{
-		img: avatar.KirillKuznetsov,
-		name: 'Строитель',
-	},
-]
