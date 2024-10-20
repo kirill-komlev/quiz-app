@@ -1,0 +1,1 @@
+import{a as e,j as r}from"./index-C-VN0zMP.js";function s({children:t,open:o,className:a}){return e.createPortal(r.jsx("dialog",{className:a,open:o,children:t}),document.getElementById("modal"))}export{s as M};
