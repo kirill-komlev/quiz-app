@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useState } from 'react'
 import { Route, Routes, Link, useLocation } from 'react-router-dom'
 
 import Loading from '../../components/Loading/Loading'
+import InstructionsForTheTest from '../../components/InstructionsForTheTest/InstructionsForTheTest'
 
 const ScrollToTop = () => {
 	const { pathname } = useLocation()
@@ -33,19 +34,32 @@ export default function DashboardPage() {
 								path='auth'
 								element={<DashboardAuth></DashboardAuth>}
 							/>
-							<Route
-								path='instructions-for-the-test'
-								element={<div>Инструкция к тесту</div>}
-							/>
 
-							<Route
-								path='test-1'
-								element={<Test1></Test1>}
-							/>
-							<Route
-								path='test-2'
-								element={<div>test 2</div>}
-							/>
+							<Route path='test-1/*'>
+								<Route
+									index
+									element={<Test1></Test1>}
+								></Route>
+								<Route
+									path='instructions-for-the-test'
+									element={<InstructionsForTheTest id={0} />}
+								/>
+							</Route>
+							<Route path='test-2'>
+								<Route
+									index
+									element={
+										<>
+											<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
+											<div>test 2</div>
+										</>
+									}
+								></Route>
+								<Route
+									path='instructions-for-the-test'
+									element={<InstructionsForTheTest id={1} />}
+								/>
+							</Route>
 							<Route
 								path='test-3'
 								element={<div>test 3</div>}
@@ -80,10 +94,14 @@ function Test1() {
 		<>
 			{showEnd ? (
 				<p>
-					Тест окончен <br />
+					Тест окончен <br />{' '}
+					<Link to='../test-2'>
+						<button className='button'>Далее</button>
+					</Link>
 				</p>
 			) : (
 				<>
+					<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
 					<h3>
 						Вопрос {count + 1} из {test1key.length}
 					</h3>
@@ -106,7 +124,6 @@ function DashboardInfo() {
 	return (
 		<>
 			<div className='dashboard__info-blocks'>
-				<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
 				<Link to='auth'>
 					<button className='dashboard__button button'>Пройти тест</button>
 				</Link>
@@ -182,7 +199,7 @@ function DashboardAuth() {
 				</div>
 
 				<Link
-					to='../test-1'
+					to='../test-1/instructions-for-the-test'
 					className='form__link'
 				>
 					<button className='button form__button'>Далее</button>
