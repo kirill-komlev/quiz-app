@@ -29,16 +29,6 @@ export default function HomePage() {
 							>
 								<Button className='intro__button button'>Пройти тест</Button>
 							</NavLink>
-							{/* <NavLink
-								className='intro__link'
-								to='/about'
-								onClick={() => {
-									setHeaderModal(false)
-									closeModal()
-								}}
-							>
-								Подробнее
-							</NavLink> */}
 						</div>
 					</div>
 					<div className='intro__background'>

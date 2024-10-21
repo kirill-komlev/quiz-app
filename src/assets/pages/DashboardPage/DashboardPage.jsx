@@ -4,6 +4,8 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 import Loading from '../../components/Loading/Loading'
 import InstructionsForTheTest from '../../components/InstructionsForTheTest/InstructionsForTheTest'
 
+import Test1 from '../../components/Test1/Test1'
+
 const ScrollToTop = () => {
 	const { pathname } = useLocation()
 
@@ -13,8 +15,6 @@ const ScrollToTop = () => {
 
 	return null
 }
-
-import { test1key, speciality } from '../../data/test_data'
 
 // https://habr.com/ru/companies/otus/articles/574428/
 
@@ -68,54 +68,6 @@ export default function DashboardPage() {
 					</Suspense>
 				</div>
 			</div>
-		</>
-	)
-}
-
-function Test1() {
-	const [count, setCount] = useState(40)
-	const [showEnd, setShowEnd] = useState(false)
-
-	const [result, setResult] = useState([])
-
-	const handleClick = code => {
-		if (count + 1 < test1key.length) {
-			result.push(code)
-			setCount(count => count + 1)
-			console.log(result)
-		} else {
-			result.push(code)
-			setShowEnd(true)
-			console.log(result)
-		}
-	}
-
-	return (
-		<>
-			{showEnd ? (
-				<p>
-					Тест окончен <br />{' '}
-					<Link to='../test-2'>
-						<button className='button'>Далее</button>
-					</Link>
-				</p>
-			) : (
-				<>
-					<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
-					<h3>
-						Вопрос {count + 1} из {test1key.length}
-					</h3>
-					{test1key[count].map(num => (
-						<button
-							key={num}
-							className='button'
-							onClick={() => handleClick(speciality[num].name)}
-						>
-							{speciality[num].name}
-						</button>
-					))}
-				</>
-			)}
 		</>
 	)
 }
