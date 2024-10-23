@@ -6,6 +6,8 @@ import InstructionsForTheTest from '../../components/InstructionsForTheTest/Inst
 
 import Test1 from '../../components/Test1/Test1'
 
+import { test2 } from '../../data/test_data'
+
 const ScrollToTop = () => {
 	const { pathname } = useLocation()
 
@@ -39,7 +41,7 @@ export default function DashboardPage() {
 								<Route
 									index
 									element={<Test1></Test1>}
-								></Route>
+								/>
 								<Route
 									path='instructions-for-the-test'
 									element={<InstructionsForTheTest id={0} />}
@@ -51,10 +53,10 @@ export default function DashboardPage() {
 									element={
 										<>
 											<Link to='instructions-for-the-test'>Инструкция к тесту</Link>
-											<div>test 2</div>
+											<Test2></Test2>
 										</>
 									}
-								></Route>
+								/>
 								<Route
 									path='instructions-for-the-test'
 									element={<InstructionsForTheTest id={1} />}
@@ -68,6 +70,32 @@ export default function DashboardPage() {
 					</Suspense>
 				</div>
 			</div>
+		</>
+	)
+}
+
+function Test2() {
+	const [count, setCount] = useState(0)
+
+	const handleClick = () => {
+		setCount(count => count + 1)
+	}
+
+	return (
+		<>
+			<div className=''>{test2[count]}</div>
+			<button
+				className='button'
+				onClick={() => handleClick()}
+			>
+				Да
+			</button>
+			<button
+				className='button'
+				onClick={() => handleClick()}
+			>
+				Нет
+			</button>
 		</>
 	)
 }

@@ -25,7 +25,7 @@ export default function Test1() {
 		<>
 			{showEnd ? (
 				<p>
-					Тест окончен <br /> Результат:{result}
+					Тест окончен
 					<br />
 					<Link to='../test-2/instructions-for-the-test'>
 						<button className='button'>Далее</button>
